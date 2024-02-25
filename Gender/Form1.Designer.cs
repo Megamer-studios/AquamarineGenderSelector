@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             trackBar1 = new TrackBar();
             label1 = new Label();
             label2 = new Label();
             button1 = new Button();
             label3 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // trackBar1
@@ -86,6 +89,17 @@
             label3.TabIndex = 4;
             label3.Text = "Gender:";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Location = new Point(-3, -3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1138, 454);
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            pictureBox1.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -96,9 +110,11 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(trackBar1);
+            Controls.Add(pictureBox1);
             Name = "Form1";
             Text = "Gender Selector";
             ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -110,5 +126,6 @@
         private Label label2;
         private Button button1;
         private Label label3;
+        private PictureBox pictureBox1;
     }
 }
