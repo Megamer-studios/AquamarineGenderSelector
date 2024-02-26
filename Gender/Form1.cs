@@ -24,37 +24,37 @@ namespace Gender
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (trackBar1.Value >= 0 && trackBar1.Value <= 25)
+            if (trackBar1.Value >= 0 && trackBar1.Value <= 14)
             {
                 label3.Text = ("Gender: male");
                 pictureBox1.Visible = false;
             }
-            if (trackBar1.Value >= 26 && trackBar1.Value <= 35)
+            if (trackBar1.Value >= 15 && trackBar1.Value <= 28)
             {
                 label3.Text = ("Gender: femboy");
                 pictureBox1.Visible = true;
             }
-            if (trackBar1.Value >= 36 && trackBar1.Value <= 55)
+            if (trackBar1.Value >= 29 && trackBar1.Value <= 42)
             {
                 label3.Text = ("Gender: gay");
                 pictureBox1.Visible = true;
             }
-            if (trackBar1.Value >= 56 && trackBar1.Value <= 65)
+            if (trackBar1.Value >= 43 && trackBar1.Value <= 56)
             {
                 label3.Text = ("Gender: neutral");
                 pictureBox1.Visible = false;
             }
-            if (trackBar1.Value >= 66 && trackBar1.Value <= 75)
+            if (trackBar1.Value >= 57 && trackBar1.Value <= 70)
             {
                 label3.Text = ("Gender: lesbian");
                 pictureBox1.Visible = false;
             }
-            if (trackBar1.Value >= 76 && trackBar1.Value <= 85)
+            if (trackBar1.Value >= 71 && trackBar1.Value <= 84)
             {
                 label3.Text = ("Gender: tomboy");
                 pictureBox1.Visible = false;
             }
-            if (trackBar1.Value >= 86 && trackBar1.Value <= 100)
+            if (trackBar1.Value >= 85 && trackBar1.Value <= 98)
             {
                 label3.Text = ("Gender: female");
                 pictureBox1.Visible = false;
