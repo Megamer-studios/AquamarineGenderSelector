@@ -46,6 +46,7 @@
             groupBox2 = new GroupBox();
             pictureBox1 = new PictureBox();
             timer1 = new System.Windows.Forms.Timer(components);
+            timer2 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -210,7 +211,13 @@
             // 
             // timer1
             // 
+            timer1.Interval = 150;
             timer1.Tick += timer1_Tick;
+            // 
+            // timer2
+            // 
+            timer2.Interval = 1;
+            timer2.Tick += timer2_Tick;
             // 
             // Form1
             // 
@@ -253,5 +260,6 @@
         private GroupBox groupBox2;
         private PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
